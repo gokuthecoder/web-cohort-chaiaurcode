@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+  color: white;
+  background: radial-gradient(#130e1d, #0c0b10);
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.announcement {
+  margin-top: 120px;
+  margin-bottom: 40px;
+  padding: 0.7rem;
+  border: 1px solid red;
+  border-radius: 40px;
+  border-color: #2d2835;
+  background-color: #1e1928;
+}
+
+.announcement-link {
+  /*  */
+  text-decoration: none;
+  color: white;
+}
+
+.announcement:hover {
+    /* background-color: #433f46; */
+    opacity: 0.8;
+  transition: 0.5s;
+}
+
+.announcement-text {
+  color: white;
+  padding: 12px;
+}
+
+.announcement-button {
+  padding: 5px 14px 5px 14px;
+  width: 100px;
+  border-radius: 50px;
+  background-color: #36313e;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-title {
+  font-size: 50px;
+  width: 700px;
+  text-align :center;
+}
+
+.hero-description {
+  font-size: 18px;
+  font-weight: 400;
+  opacity: 0.8;
+  width: 700px;
+  text-align :center;
+}
+
+.cta-button {
+  margin-top: 80px;
+  padding: 12px;
+  border-radius: 25px;
+  color: white;
+  text-decoration: none;
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(67,83,234,1) 0%, rgba(82,77,235,1) 35%, rgba(109,64,236,1) 100%);
+}
+
+.cta-button:hover {
+  background-color: #9a9898;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 1rem;
+  }
+
+  .announcement-link {
+    font-size: 0.75rem;
+  }
+
+  .hero-content {
+    padding: 0 1rem;
+  }
+}
