@@ -12,51 +12,106 @@
 }
 
 body {
+
+}
+
+*{
+  box-sizing: border-box;
 }
 
 .hero {
 }
 
 .hero-grid {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 30px;
 }
 
 .content-col h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 90px;
+  margin-bottom: 0;
 }
 
 .content-col p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #393939;
 }
 
 .cta-group {
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
 }
 
 .sr-only {
+  font-size: 19px;
+  font-weight: 500;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .input-wrapper {
 }
 
 input[type='text'] {
+  border: 2px solid rgba(42, 37, 37, 0.271);
+  border-radius: 7px;
+  height: 40px;
+  width: 300px;
+  font-size: 16px;
+  padding: 0 12px;
+  color: #f5f6f7;
+  font-weight: 600;
 }
 
 .demo-button {
+  background-color: #3b83f6;
+  border: none;
+  height: 40px;
+  width: 120px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  margin: 0 12px;
+  padding: 0 12px;
+  cursor: pointer;
 }
 
 .demo-button:hover {
 }
 
 .brands-section {
+  padding-top: 80px;
 }
 
 .trusted-by {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
 }
 
 .brand-logos {
+  margin-top: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 30px;
 }
 
 .brand-logo {
 }
 
 .image-col {
+}
+
+.image-col img {
+  width: 700px;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 .hero-image {
@@ -113,7 +168,22 @@ input[type='text'] {
   }
 }
 
+.toggle-btn{
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 40px;
+}
+
 .dark-mode-toggle {
+  background-color: #2663ec;
+  border: none;
+  height: 40px;
+  width: 120px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  margin-right: 0;
+  cursor: pointer;
 }
 
 .dark-mode-toggle:hover {
